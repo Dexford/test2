@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Starcatcher</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="game-container">
+    <header class="hud">
+      <h1>Starcatcher</h1>
+      <div class="hud__stats">
+        <span>Punkte: <strong id="score">0</strong></span>
+        <span>Leben: <strong id="lives">3</strong></span>
+        <span>Level: <strong id="level">1</strong></span>
+      </div>
+    </header>
+    <canvas id="game" width="480" height="640" aria-label="Starcatcher Spielbrett"></canvas>
+    <section class="panel" id="panel" hidden>
+      <h2 id="panel-title">Starcatcher</h2>
+      <p id="panel-text">Fange die funkelnden Sterne und weiche den Meteoriten aus.</p>
+      <button id="start-button" type="button">Spiel starten</button>
+      <p class="panel__hint">Nutze die Pfeiltasten oder A/D zum Bewegen.</p>
+    </section>
+  </main>
+  <script type="module" src="js/game.js"></script>
+</body>
+</html>
